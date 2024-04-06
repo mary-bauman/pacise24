@@ -23,43 +23,25 @@ for line in sys.stdin:
         while i <= 22:
             if a[i:i+3]== " _ " and b[i:i+3]== "| |" and c[i:i+3]== "|_|":
                 num.append(0)
-                i+=2
             elif a[i:i+3]=="   " and b[i:i+3]=="  |" and b[i:i+3]==c[i:i+3]:
                 num.append(1)
-                i+=2
             elif a[i:i+3]== " _ " and b[i:i+3]== " _|" and c[i:i+3]== "|_ ":
                 num.append(2)
-                i+=2
             elif a[i:i+3]== " _ " and b[i:i+3]== " _|" and c[i:i+3]== " _|":
                 num.append(3)
-                i+=2
             elif a[i:i+3]== "   " and b[i:i+3]== "|_|" and c[i:i+3]== "  |":
                 num.append(4)
-                i+=2
             elif a[i:i+3]== " _ " and b[i:i+3]== "|_ " and c[i:i+3]== " _|":
                 num.append(5)
-                i+=2
             elif a[i:i+3]== " _ " and b[i:i+3]== "|_ " and c[i:i+3]== "|_|":
                 num.append(6)
-                i+=2
             elif a[i:i+3]== " _ " and b[i:i+3]== "  |" and c[i:i+3]== "  |":
                 num.append(7)
-                i+=2
             elif a[i:i+3]==  " _ " and b[i:i+3]== "|_|" and c[i:i+3]== "|_|":
                 num.append(8)
-                i+=2
             elif a[i:i+3]== " _ " and b[i:i+3]== "|_|" and c[i:i+3]== " _|":
                 num.append(9)
-                i+=2
-            
-            # if a[i:i+3]== and b[i:i+3]== and c[i:i+3]== :
-            #     num.append()
-            #     i+=2
-            # if a[i:i+3]== and b[i:i+3]== and c[i:i+3]== :
-            #     num.append()
-            #     i+=2
-
-            i+=1
+            i+=3
 
         numbers = []
         for n in num:
@@ -70,8 +52,6 @@ for line in sys.stdin:
             newI = 0
             for char in new:
                 newI += int(char)
-            # print("newI")
-            # print(newI)
             numbers[n]=newI
 
         #print(numbers)

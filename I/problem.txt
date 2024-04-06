@@ -1,0 +1,45 @@
+https://lightoj.com/contest/pacise-2024/arena/problem/5524
+
+You work for a company, which has some legacy files containing account numbers in a seven segment display format. That is, the output produces a file with digits like this:
+
+ _     _  _     _  _  _  _  _ 
+| |  | _| _||_||_ |_   ||_||_|
+|_|  ||_  _|  | _||_|  ||_| _|
+Each account number is exactly seven digits. Write a program that can take a list of these seven segment numbers and determine whether each account number is valid according to a checksum calculation. This can be calculated as follows:
+
+From the right-most digit, move left and double the value of every second digit.
+
+Sum the digits of the resulting value in each position, call this value "s".
+
+If s mod 10 = 0, then the account number is valid.
+
+Example:
+
+account number:     4   9   7   3   6   0   8
+double every other: 4  18   7   6   6   0   8
+sum of digits:      4 + 9 + 7 + 6 + 6 + 0 + 8 = 40
+
+40 mod 10 = 0
+Input
+Each entry is three lines long, and each line has exactly 21 characters. The Each account number has exactly 7 digits all of which should be in the range 0-9.
+
+Output
+For each account number, print the account number followed by space and then a status code where the status code is either VALID or INVALID depending on the checksum calculation. Each account number and status code must be on its own line.
+
+
+Sample
+Input	
+    _  _  _  _  _  _ 
+  ||_| _| _||_ |_| _|
+  ||_||_ |_  _||_||_ 
+ _  _     _  _  _  _ 
+ _||_ |_|  || | _||_|
+|_ |_|  |  ||_||_ |_|
+ _  _  _  _  _  _    
+ _||_|  ||_||_||_ |_|
+|_ |_|  | _||_||_|  |
+
+Output
+1822582 INVALID
+2647028 INVALID
+2879864 VALID

@@ -1,3 +1,5 @@
+https://lightoj.com/contest/pacise-2024/arena/problem/5523
+
 In positional notation we know the position of a digit indicates the weight of that digit toward the value of a number. For example, in the base 10 number 362 we know that 2 has the weight 1, 6 has the weight 10, and 3 has the weight 100, yielding the value 3 x 100 + 6 x 10 + 2 x 1, or just 300 + 60 + 2. The same mechanism is used for numbers expressed in other bases. While most people assume the numbers they encounter everyday are expressed using base 10, we know that other bases are possible. In particular, the number 362 in base 9 or base 14 represents a totally different value than 362 in base 10.
 
 For this problem your program will presented with a sequence of pairs of integers. Let's call the members of a pair X and Y. What your program is to do is determine the smallest base for X and the smallest base for Y (likely different from that for X) so that X and Y represent the same value.

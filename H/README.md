@@ -9,21 +9,32 @@ For example, consider the illustrations below, in which nodes are represented by
 
 A collection of graphs representing trees. The first 2 graphs (left and center) are trees. The last (right) is not.
 
-Input
+**Input**
+
 The input will consist of multiple lines, each representing a single graph. Each lines consists of any number of space-separated pairs of numbers separated by commas. For each pair of numbers representing an edge, the first number represents the origin node and the second number represents the destination node. Node numbers are greater than zero, but might not be sequential. (a graph could include a node 15 but lack a node 14)
 
-Output
+**Output**
+
 For each test case display the line "Case k is a tree." or the line "Case k is not a tree.", where k corresponds to the test case number (they are sequentially numbered starting with 1).
 
-Sample
-Input
+**Sample**
+
+**Input**
+
 6 8, 5 3, 5 2, 6 4, 5 6
+
 8 1, 7 3, 6 2, 8 9, 7 5, 7 4, 7 8, 7 6
+
 3 8, 6 8, 6 4, 5 3, 5 6, 5 2
+
 1 2, 2 1
 
-Output
+**Output**
+
 Case 1 is a tree.
+
 Case 2 is a tree.
+
 Case 3 is not a tree.
+
 Case 4 is not a tree.

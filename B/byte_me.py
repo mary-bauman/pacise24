@@ -1,3 +1,6 @@
+# BYTE ME SOLUTION
+# Author: Nolan Prochnau
+
 import sys
 
 for idx, ln in enumerate(sys.stdin):
